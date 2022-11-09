@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+@import url("../css/header.css");
+@import url("../css/section-main.css");
+@import url("../css/section-news.css");
+@import url("../css/section-articles.css");
+
+:root {
+    /* Fonts */
+    --text: 'Inter', sans-serif;
+    
+    /* Primary Colors */
+    --softOrange: #e9ab53;
+    --softRed: #f15e50;
+    
+    /* Neutral Colors */
+    --offWhite: #fffdfa;
+    --line: #fffdfa32;
+    --grayishBlue: #c5c6ce;
+    --darkGrayishBlue: #5d5f79;
+    --veryDarkBlue: #00001a;
+}
+
+html {
+    font-family: var(--text);
+    background-color: var(--offWhite);
+    font-size: 15px;
+    font-weight: 400;
+    padding: 1em;
+}
+
+@media screen and (min-width: 992px) {
+    html {
+        padding: 3em;
+        padding-top: 1em;
+    }
+    main {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr .5fr;
+        gap: 2.5em;
+    }
+}
